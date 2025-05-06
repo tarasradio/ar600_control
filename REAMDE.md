@@ -1,20 +1,28 @@
+Проект для управления движением робота AR600.
+
+Humanoid robot control experiments based on Kajita et al. experience.
+
+This repository contains walking control algorithms based on LIPM (Linear Inverted Pendulum Model).
+
+Опирается на данные, полученные в https://github.com/tarasradio/humanoid_control
+
 Для запуска движения:
 
-1 - запустить ROS:
+ 1 - запустить ROS:
 
-~/ roscore
+ ~/ roscore
 
-2 - запустить Gazebo:
+ 2 - запустить Gazebo:
 
-~/ rosrun gazebo_ros gazebo
+ ~/ rosrun gazebo_ros gazebo
 
-3 - поставить модель робота в Gazebo:
+ 3 - поставить модель робота в Gazebo:
 
-~/ roslaunch ar600_control start_simulation.launch
+ ~/ roslaunch ar600_control start_simulation.launch
 
-4 - запустить файл для движения:
+ 4 - запустить файл для движения:
 
-~/ python walker.py (для запуска нужно перейти в каталог: catkin_ws/src/humanoid_vstu/ar600_control/scripts/)
+ ~/ python walker.py (для запуска нужно перейти в каталог: catkin_ws/src/humanoid_vstu/ar600_control/scripts/)
 
 Код работает под ROS1.noetic
 
@@ -63,7 +71,7 @@
 ~/catkin_ws:
  - src/
   - humanoid_vstu/
-    - ar600_control/
+    - ar600_control/ (этот репозиторий)
       - config/
         - joints.yaml
       - include/
@@ -89,7 +97,7 @@
       - CMakeLists.txt
       - package.xml
       - setup.py
-    - ar600_description/
+    - ar600_description/ (репозиторий https://github.com/tarasradio/ar600_description)
       - config/
         - config_view.rviz
       - launch/
@@ -163,4 +171,3 @@
       - CMakeLists.txt
       - package.xml
       - setup.py
-  - hexapod_vstu/
