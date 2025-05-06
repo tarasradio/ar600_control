@@ -160,7 +160,7 @@ This repository contains walking control algorithms based on LIPM (Linear Invert
       - kinamatic.png
       - package.xml
       - README.md
-    - joint_states_listener/
+    - joint_states_listener/ (репозиторий https://github.com/tarasradio/joint_states_listener)
       - nodes/
         - listener.py
       - scripts/
