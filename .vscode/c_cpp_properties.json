@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/tarasradio/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/tarasradio/catkin_ws/src/humanoid_vstu/ar600_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

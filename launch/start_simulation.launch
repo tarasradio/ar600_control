@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+  <group ns="ar600">
+    <!-- spawn ar600 -->
+    <!-- <include file="$(find ar600_control)/launch/gazebo.launch"/> -->
+    <include file="$(find ar600_description)/launch/spawn.launch"/>
+    <!-- <include file="$(find ar600_description)/launch/rviz.launch"/> -->
+    <include file="$(find ar600_control)/launch/init_ros_control.launch"/>
+    <node name="joint_states_listener" pkg="joint_states_listener" type="listener.py" output="screen"/>
+  </group>
+</launch>
